@@ -1,0 +1,117 @@
+p 
+{
+    font: size 13px;
+    color:#555555;
+    margin:0;
+    padding:50px;
+    text-align:justify;  
+}
+*
+{
+    margin:0;
+    padding:0;
+    
+}
+h1
+{
+    font: size 20px;
+    color:#B03A2E;
+    margin:2; 
+
+}
+body
+{
+    font: size 20px;
+    background-color:#FFD700;
+    background-image:linear-gradient(90deg, rgba(12, 12, 12), #FFD700, #FFD700, #FFD700);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #34495E;
+    font-family:Calibri;
+    margin: 0;  
+}
+
+.rechteck
+{ 
+    width:48%;
+    height:200px;
+   
+    
+
+}
+
+.leiste
+{ 
+    width:auto;
+    height:10px;
+    padding: 15px;
+    margin: 10px;
+    text-align:center;
+    font-family:"Copperplate";
+    font-size:20px;   
+   
+
+}
+.flexbox 
+{
+    background-color: #f0e2e2ae;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: space-around;
+    
+   
+   
+
+}
+.flexbox > div 
+{
+    width: 710px;
+    margin: 3px;
+    text-align: justify;
+    font-size: 15px;
+    flex-direction: column;
+}
+
+#rot
+{
+    background-color:red;
+}
+
+#gelb
+{
+    background-color:rgb(208, 208, 141);
+}
+#dunkelblau
+{
+    background-color:#060270;
+}
+#hellblau
+{
+    background-color:#7D79E9;
+}
+#hellgruen
+{
+    background-color:#32F340;
+}
+#menu ul
+{
+    display:inline-block;
+    
+}
+#menu
+{
+    text-align:center;
+}    
+li
+{
+    display:inline;
+    margin-right: 30px; 
+    padding: 20px;
+    
+    
+}

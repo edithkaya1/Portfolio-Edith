@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Pacifico&family=Playwrite+CU:wght@100..400&family=Sofadi+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+:root {
+    --screencolor: #e4e3ef;
+    --hoovercolor: #ba4e89;
+    --textcolor: whitesmoke;
+    --textheader: #52544D;
+    --textheader1: #14471E;
+}
+
+body {
+    background-color: var(--screencolor); 
+    margin-inline: 1rem;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content:center;
+    margin-inline: 1rem;
+    gap: 1rem;    
+}
+
+.page-header p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--textheader);
+}
+
+#logo {
+    width: 5%;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+    flex: wrap;
+    gap: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-inline: 1rem;
+}
+
+.top-header a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1rem;
+    align-items:center;
+    color: var(--textheader);
+    text-shadow: 2px 2px 0 rgb(154, 144, 144);
+    transition: transform 0.2s;
+}
+
+.top-header a:hover {
+    background-color: var(--hoovercolor);
+    border-radius: 20%;
+    transform: scale(1.2);
+}
+
+.top-header a:visited {
+    color: var(--textheader1);
+} 
+
+
+.top-header a:active {
+  
+    color: #858861;
+}
+
+.top-header a:link {
+    color: #091B2F;
+}
+
+#line {
+    border: 1.5px solid black;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-align: center;
+    gap: 1rem;
+}
+
+.nav-links a{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.5rem;
+    align-items:center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 5px 5px 10px rgb(154, 144, 144);
+    color: var(--textheader);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+.card .image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5);
+    color:#FBFFFF;
+    opacity: 0.5;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .card-container:hover .overlay {
+    opacity: 1;
+  }
+
+.page-footer {
+    font-size: 1.2rem;
+    text-align: center;
+    align-content: center;
+    background-color: black;
+    color: var(--textcolor);
+}
+
+.page-footer p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--textcolor);
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-align: center;
+    gap: 1rem;
+    color: var(--textcolor);
+}
+
+.footer-links a{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.2rem;
+    align-items: center;
+    color: var(--textcolor);
+}
+
+.soc-icons a {
+    font-size: 1.5rem;
+    color: white;
+    margin: 1rem;
+}
+
+/* About site and recipe of the month site */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content:center;
+    margin-inline: 1rem;
+    gap: 1rem;
+}
+
+.site-header p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--textheader);
+}
+
+.top-header1 {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+    flex: wrap;
+    gap: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-inline: 1rem;
+    transition: transform 0.2s;    
+}
+
+.top-header1 a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1rem;
+    align-items:center;
+    color: var(--textheader1);
+    text-shadow: 2px 2px 0 rgb(154, 144, 144);
+}
+
+.top-header1 a:hover {
+    background-color: var(--hoovercolor);
+    border-radius: 20%;
+    transform: scale(1.2);
+}
+
+.top-header1 a:visited {
+    color: var(--textheader1);
+} 
+
+.top-header1 a:active {
+  
+    color: #858861;
+}
+
+.top-header1 a:link {
+    color: #091B2F;
+}
+
+/* About site */
+#header1 {
+    color: #DA6A00;
+    font-size: 3.5rem;
+    text-shadow: 6px 2px 0 rgb(154, 144, 144);
+}
+
+.container-about {
+    display: flex;
+    margin-inline: 4rem;
+    margin-block: 2rem;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+
+.container-about .image {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#p-about1 {
+    font-size: 2rem;
+    color: #EE9B01;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#p-about2 {
+    font-size: 1.5rem;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+#p-about3 {
+    font-size: 1.5rem;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #68904D;
+}
+
+/* Recipe of the month site */
+h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    margin-block: 0.5rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #DA6A00;
+    text-shadow: 7px 2px 0 rgb(154, 144, 144);
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    margin-block: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #68904D;
+}
+
+.rec-container {
+    max-width: 1200px;
+    margin-block: 3rem;
+    margin-inline: 2rem;
+}
+
+.recipe-img { 
+	width: 50%; 
+	height: 650px; 
+	margin: 2em auto; 
+	border:1px solid rgb(9, 12, 9);
+}
+.recipe-img img { 
+	object-fit: cover; 
+	width: 100%; 
+	height: 100%;
+}
+
+.container {
+    display: flex;
+    margin-inline: 4rem;
+    margin-block: 2rem;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+
+.list-header {
+    font-size: 2em;
+    color:#EE9B01;
+    padding: 0.5rem;
+}
+
+.listeu {
+    font-size: 1rem;
+    color:#14471E;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    list-style-type: circle;
+}
+
+.listeo {
+    font-size: 1rem;
+    color:#14471E;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Mobile phone */
+@media screen and (max-width: 480px)
+{
+    .card-container {
+        grid-template-columns: repeat 1fr;
+    }  
+
+    #logo {
+        width: 10%;
+    }
+
+    .top-header {
+        gap: 0.4rem;
+    }
+    
+    .top-header a {
+        padding: 0.4rem;
+        font-size: 0.8rem;
+    }
+
+    .nav-links {
+        gap: 0.4rem;
+    }
+    
+    .nav-links a{
+        padding: 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    .footer-links {
+        gap: 0.8rem;
+    }
+    
+    .footer-links a{
+        font-size: 0.8rem;
+    }
+
+    .page-footer p {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-block: 0.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-block: 0.5rem;
+    }
+
+    .recipe-img { 
+        width: 40%; 
+        height: 300px; 
+    }
+
+    .container {
+        display: flex;
+        gap: 0.5rem;
+        margin-inline: 3rem;
+    }
+
+    .container {
+        display: flex;
+        gap: 0.5rem;
+        margin-inline: 1rem;
+    }
+    
+    #header1 {
+        font-size: 2rem;
+    }
+    
+    .container-about {
+        margin-inline: 1.5rem;
+        gap: 0.8rem;
+    }
+    
+    .container-about .image {
+        width: 30%;
+        height: 150px;
+        margin-block: 7rem;
+    }
+    
+    #p-about1 {
+        font-size: 1em;
+    }
+    
+    #p-about2 {
+        font-size: 0.8rem;
+    }
+
+    #p-about3 {
+        font-size: 0.8rem;
+    }
+}
+
+/* Handy*/
+@media screen and (max-width: 480px)
+{
+    .card-container {
+        grid-template-columns:  1fr;
+    } 
+
+    #logo {
+        width: 10%;
+    }
+
+    .top-header {
+        gap: 0.5rem;
+    }
+    
+    .top-header a {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+    }
+    
+    .nav-links a{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-links {
+        gap: 0.8rem;
+    }
+    
+    .footer-links a{
+        font-size: 1rem;
+    }
+
+    .page-footer p {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-block: 0.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-block: 0.5rem;
+    }
+
+    .recipe-img { 
+        width: 40%; 
+        height: 250px; 
+    }
+
+    .container {
+        display: flex;
+        gap: 0.8rem;
+        margin-inline: 0.8rem;
+    }
+    
+    #header1 {
+        font-size: 3rem;
+    }
+    
+    .container-about {
+        margin-inline: 2rem;
+        gap: 1rem;
+    }
+    
+    .container-about .image {
+        width: 70%;
+        height: 400px;
+        margin-block: 8rem;
+    }
+    
+    #p-about1 {
+        font-size: 2em;
+    }
+    
+    #p-about2 {
+        font-size: 1.5rem;
+    }
+
+    #p-about3 {
+        font-size: 1.5rem;
+    }
+}
+/* Tablet */
+@media screen and (max-width: 1200px) and (min-width: 481px)
+{
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+
+    #logo {
+        width: 10%;
+    }
+
+    .top-header {
+        gap: 0.5rem;
+    }
+    
+    .top-header a {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .nav-links {
+        gap: 0.5rem;
+    }
+    
+    .nav-links a{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-links {
+        gap: 0.8rem;
+    }
+    
+    .footer-links a{
+        font-size: 1rem;
+    }
+
+    .page-footer p {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin-block: 0.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        margin-block: 0.5rem;
+    }
+
+    .recipe-img { 
+        width: 50%; 
+        height: 450px; 
+    }
+
+    .container {
+        display: flex;
+        gap: 0.8rem;
+        margin-inline: 0.8rem;
+    }
+    
+    #header1 {
+        font-size: 3rem;
+    }
+    
+    .container-about {
+        margin-inline: 2rem;
+        gap: 1rem;
+    }
+    
+    .container-about .image {
+        width: 70%;
+        height: 400px;
+        margin-block: 5rem;
+    }
+    
+    #p-about1 {
+        font-size: 2em;
+    }
+    
+    #p-about2 {
+        font-size: 1.5rem;
+    }
+
+    #p-about3 {
+        font-size: 1.5rem;
+    }
+}
+

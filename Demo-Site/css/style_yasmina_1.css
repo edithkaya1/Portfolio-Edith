@@ -1,0 +1,222 @@
+*
+{
+    margin:0;
+    padding:0;   
+}
+
+body {
+    font-size: 20px;
+    background-color:#FFD700;
+    background-image:url(https://www.farmoneforty.ca/wp-content/uploads/2016/03/FarmOneForty-header-pasture-720x540.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:Calibri;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height:100%; 
+}
+
+html
+{
+    height:100%;   
+}
+
+p 
+{
+    font-size: 30px;
+    margin:0;
+    padding:80px;
+    text-align:center; 
+    font-family: "Handlee", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1
+{
+    font-size: 40px;
+    text-align:center; 
+    color:#5d1c10;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+/* Fusszeile */
+.footer
+{
+    font-size: 17px;
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #5b120a;
+    height: 4em;
+    position: fixed;
+    width: 100%;
+    background-color: #E7AB8A; 
+    left: 0; right: 0; bottom: 0;    
+}
+
+.mehrspaltig
+{
+    column-count: 3;
+    width: 30em;
+    float: left;
+	display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Navigation */
+nav
+{ 
+    width:auto;
+    margin: 10px;
+    font-family:"Copperplate";
+    font-size:1.7vw;
+    background-image: linear-gradient(to right,#FCF7D7 0%, #DC9C80 100%); 
+    border:5px double #31110d;
+   
+
+    
+}
+#menu
+{
+    text-align:center;
+} 
+
+li
+{
+    display:inline-block;
+    color: #5b120a;
+    margin: 10px 5% 10px 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: #5b120a;
+}
+@media screen and (max-width: 600px) {
+    .leiste {
+      margin: 5%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .kreis {
+      margin: 5%;
+    }
+}
+/* Startseite */
+.kreis
+{ 
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: solid 5px rgba(254, 254, 254, 0.7);
+    float:left;
+}
+#rot
+{
+    background-color:#5b120a;
+}
+#blau
+{
+    background-color:#EBF5FB;
+    fill-opacity: 0.5;
+}
+img
+{
+    max-width: 100%;
+    height: auto;
+  
+}
+@media screen and (max-width: 600px) {
+    .leiste {
+        margin: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #blau {
+      margin: 20%;
+      
+    }
+}
+/* Kontaktseite */
+input[type=text] , textarea
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #110707;
+    border-radius: 4px;
+    outline: none;
+    position:relative;
+    resize:vertical;
+    background-color: #FEF5E7;
+}
+input[type=text]:focus 
+{
+    background-color: #FCEDC5;
+}
+textarea:focus 
+{
+    background-color: #FCEDC5;
+}
+label 
+{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=submit] 
+{
+    background-color: #5b120a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float:right;
+}
+input[type=submit]:hover {
+    background-color: #FCEDC5;
+    color: rgb(91, 87, 87);
+}
+.container 
+{
+    border-radius: 5px;
+    padding: 20px;
+
+}
+.col-25 
+{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row::after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    
+    }
+}

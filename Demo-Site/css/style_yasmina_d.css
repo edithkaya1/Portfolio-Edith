@@ -1,0 +1,153 @@
+*
+{
+    margin:0;
+    padding:0;    
+}
+
+body
+{
+    font-size: 1.25em;
+    background-color:#FFD700;
+    background-image:url(https://webneel.com/wallpaper/sites/default/files/images/08-2018/4-nature-wallpaper-sky.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #34495E;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+html
+{
+    height:100%;   
+}
+
+p 
+{
+    font-size: 2vw;
+    color:#555555;
+    margin:2.5em;
+    text-align:center; 
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+h1
+{
+    font-size: 40px;
+    color:#5d1c10;;
+    text-align:center; 
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form
+{
+    width:47%;
+    height:150x;
+    border-radius: 90px;
+    position:relative;
+    border-style: none;
+    padding: 3px;     
+    
+}
+@media screen and (max-with:600px){
+    .form{
+    background-color: #D4EFDF;
+    }
+    
+}
+#orange
+{
+    background-color:#a7e6eb;
+}
+#gruen
+{
+    background-color:#CCFF66;
+}
+#gelb
+{
+    background-color:#FFFF33;
+}
+.leiste
+{ 
+    width:auto;
+    height:10px;
+    padding: 20px;
+    margin: 10px;
+    font-family:"Copperplate";
+    font-size:20px;
+    background-image: linear-gradient(to right, #CAEDCD 0%, #0D548A 100%); 
+    border:5px double #31110d; 
+
+}
+#menu ul
+{
+    display:inline-block;
+    
+}
+#menu
+{
+    text-align:center;
+}    
+li
+{
+    display:inline;
+    color: #5b120a;
+    padding: 10px;
+    
+}
+a
+{
+    display:inline;
+    color: #5b120a;
+    text-decoration: none;
+    padding: 10px 10px;
+      
+}
+.bild
+{
+    max-width: 100%;
+    height: auto;
+    border: double 7px rgba(110, 103, 103, 0.7);
+    border-radius: 0 0 0 0;
+}
+/* Fusszeile */
+.footer
+{
+    font-size: 17px;
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #5b120a;
+    height: 4em;
+    position: fixed;
+    width: 100%;
+    background-color: #34AACF; 
+    left: 0; right: 0; bottom: 0;  
+    
+    
+}
+.mehrspaltig
+{
+    column-count: 3;
+    width: 30em;
+    float: left;
+	display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    justify-content: center;
+    text-align: center;
+ 
+}
+

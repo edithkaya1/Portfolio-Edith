@@ -1,0 +1,78 @@
+p 
+{
+    font: size 13px;
+    color:#555555;
+    margin:0;  
+}
+*
+{
+    margin:0;
+    padding:0;
+}
+h1
+{
+    font: size 30px;
+    color:#B03A2E;
+    margin:2;  
+}
+body
+{
+    font: size 20px;
+    background-color:#8de7b4;
+    background-image:url(https://wallpapercave.com/wp/yOaxaSx.jpg);
+    color:#34495E;
+    font-family:Calibri;
+    font-size:20px;
+    margin:2;  
+    background-image:linear-gradient(90deg, rgba(12, 12, 12), #82E0AA, #82E0AA, #82E0AA);
+}
+
+.rechteck
+{
+    width:200px;
+    height:150px;
+    
+
+}
+
+#rot
+{
+    background-color:red;
+}
+.klein
+{
+    width:50px;
+    height:50px;
+    
+
+}
+
+#gelb
+{
+    background-color:rgb(208, 208, 141);
+}
+#blau
+{
+    background-color:rgb(67, 48, 112);
+}
+
+.flexbox > div 
+{
+    width: 710px;
+    margin: 3px;
+    text-align: justify;
+    font-size: 15px;
+}
+@media (min-width: 430px)
+ { 
+    .flexbox { max-width: 710px; display: flex; flex-wrap: wrap } 
+    .fb { width: 49%; } 
+
+}
+.flexbox > div 
+{
+    width: 710px;
+    margin: 3px;
+    text-align: justify;
+    font-size: 15px;
+}

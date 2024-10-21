@@ -1,0 +1,301 @@
+*
+{
+    margin:0;
+    padding:0;    
+}
+
+body
+{
+    font-size: 1.25rem;
+    background-image:url(https://wallpaperset.com/w/full/f/3/3/522738.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #34495E;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x:hidden;
+    overflow-y:hidden; 
+}
+
+html
+{
+    width: 100%; 
+    height: 100%; 
+}
+
+p 
+{
+    font-size: 1.1rem;
+    color:#555555;
+    padding: 0.8rem;
+    text-align:justify; 
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h1, h2
+{
+    font-size: 3vw;
+    color:#5d1c10;
+    text-align:center; 
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1200px)
+{
+    h1, h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    h1, h2 {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 200px)
+{
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.form
+{
+    width: 50rem;
+    height: 8.5rem;
+    border-radius: 20%;
+    position:relative;
+    border-style: none; 
+    background-color:#CCFF66;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .form {
+        width: 45.5rem;
+        height: 8.5rem;
+        border-radius: 17%;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    p {
+        padding: 1.1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .form {
+        width: 33rem;
+        height: 9.5rem;
+        border-radius: 17%;
+    }
+}
+
+@media screen and (max-width: 992px) 
+{
+    p {
+        padding: 0.9em;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .form {
+        width: 28rem;
+        height: 10rem;
+        border-radius: 12%;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    p {
+        padding: 0.9em;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 200px)
+{
+    .form {
+        width: 22.5rem;
+        height: 9rem;
+        border-radius: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 200px)
+{
+    p {
+        padding: 0.7em;
+        font-size: 0.8rem;
+    }
+}
+
+/* Navigation */
+nav
+{ 
+    width: auto;
+    margin: 0.7rem;
+    font-family: "Copperplate";
+    font-size: 1.7vw;
+    background-image: linear-gradient(to right,#c1e6a9 0%,  #72C92F 100%); 
+    border:5px double #31110d; 
+    text-align:center;  
+}
+
+li
+{
+    display:inline-block;
+    color: #5b120a;
+    margin: 0.4rem 8% 0.4rem 0;    
+}
+
+a
+{
+    text-decoration: none;
+    color: #5b120a;
+}
+
+nav a:hover 
+{
+    background-color: #3e3b3b;
+    color: rgb(217, 204, 204);
+}
+
+@media screen and (max-width: 1200px) and (min-width: 200px)
+{
+    nav {
+        margin: 1% 3%;
+    }
+}
+
+.bild
+{
+    width: 20%;
+    height: auto;
+    border: double 7px rgba(50, 49, 49, 0.7);
+    border-radius: 0 0 0 0;
+    margin: -11% 2%;
+    float:right;
+    padding: 0.4rem;
+}
+
+.bild2
+{
+    width: 20%;
+    height: auto;
+    border: double 7px rgba(50, 49, 49, 0.7);
+    border-radius: 0 0 0 0;
+    margin: -17.5% 23.5%;
+    float:right;
+    padding: 0.4rem;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .bild2 {
+        margin: -16% 8%;
+        width: 18%;   
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .bild2 {
+        margin: -25% 16%;
+        width: 18%;     
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .bild2 {
+        margin: -27% 3%;
+        width: 18%;   
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 200px)
+{
+    .bild2 {
+        margin: -25% 3%;
+        width: 18%;     
+    }
+}
+
+/* Fusszeile */
+.footer
+{
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #5b120a;
+    height: 5rem;
+    position: absolute;
+    width: 100%;
+    background-color: #72C92F;
+    left: 0; right: 0; bottom: 0;  
+    padding: 0.5%;
+    border-top: solid 3px;
+    border-color:#e9f0f0;   
+}
+
+.mehrspaltig
+{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .footer {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .footer {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 200px)
+{
+    .footer {
+        font-size: 0.5rem;
+        height: 4rem;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage von Yasmina Peschke</title>
+    <meta name="description" content="Das ist die Website von Yasmina Peschke. Besuchen Sie meine Seite und lernen Sie mich kennen.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="css/style_yasmina.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/" aria-current="page"><b>HOME</b></a></li>
+            <li><a href="html/yasmina.html"><b>ÜBER MICH</b></a></li>
+            <li><a href="html/reiten.html"><b>REITEN</b></a></li>
+            <li><a href="html/ringana.html"><b>RINGANA</b></a></li>
+            <li><a href="html/kontakt.html"><b>KONTAKT</b></a></li>
+        </ul>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+
+    <h1>Willkommen auf der Seite von Yasmina Peschke!</h1>
+      
+    <h4>
+        <i class='fa'>&#xf004;</i>
+        <q>Fear will have you referring to your past. Faith will have you routing for your future</q><i class='fa'>&#xf004;</i>
+        <address style="font-size:10px; margin: 0">(unknown)</address>
+    </h4>
+
+    <div class="cont-anord">
+        <div class="kreis" id="rot" style="margin:0.5% -5% 0 0">
+            <div id="Foo" class="center">
+                <p style="color:#EFF5FB;font-style:italic">Ich bin Yasmina.<br><br>Lernen Sie mich und meine Interessen auf meiner Seite näher kennen!</p>  
+            </div>
+            
+        </div>
+    
+        <div class="kreis" id="blau" style="margin-top: 0.5%;background-image:url('images/yasmina-index.jpg'); background-size:cover;">
+            <p></p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var f = document.getElementById('Foo');
+            setInterval(function () {
+                f.style.display = (f.style.display == 'none' ? '' : 'none');
+            }, 1300);
+        
+        });
+    </script>
+
+    <footer>
+        <div class="footer">
+            <div class="mehrspaltig">
+                <div>
+                    <a href="mailto:yasmina2907.reiten@gmail.com"><i class="fa">&#xf003;</i>
+                        yasmina2907.reiten@gmail.com</a>
+                </div>
+                <div>
+                    <a href="tel:+436509938928"><i class="fa">&#xf095;</i>
+                        +43 666 1130828</a>  
+                </div> 
+                <div>
+                    <span><i class="fa">&#xf1d9;</i>Yasmina Peschke Laxenburgerstrasse 39 1100 Wien</span><br>
+                </div>          
+            </div>
+            <div class="mehrspaltig">
+                <div>
+                    <span>Copyright<i class="fa">&#xf1f9;</i>2024</span>
+                </div>
+                <div>
+                    <span>Alle Rechte vorbehalten</span>
+                </div>
+            </div>          
+        </div>     
+    </footer>    
+          
+</body>
+</html>
