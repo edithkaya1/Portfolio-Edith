@@ -4,7 +4,7 @@ $cards = "";
 if (isset($_GET["title"])){
   $title = $_GET["title"];
   $title = ucfirst($title);
-  $sql = "SELECT * FROM products where title like '%{$title}%' or author_lastname like '{$title}%' or author_firstname like '{$title}%'";
+  $sql = "SELECT * FROM products where title like '%{$title}%' or author_lastname like '%{$title}%' or author_firstname like '%{$title}%'";
 }
 else{
   $sql = "SELECT * FROM products";

@@ -4,17 +4,18 @@ session_start();
 if (isset($_SESSION["adm"])) {
   header("Location: dashboard.php");
 }
-if (!isset($_SESSION["adm"]) && !isset($_SESSION["user"])) {
-  header("Location: login.php");
-}
+// if (!isset($_SESSION["adm"]) && !isset($_SESSION["user"])) {
+//   header("Location: login.php");
+// }
 require_once "components/db_connect.php";
 
+if (isset($_SESSION["user"])) {
 $sql = "SELECT * FROM users WHERE id = {$_SESSION["user"]}";
 // echo $sql;
 $result = mysqli_query($connect, $sql);
 $row1 = mysqli_fetch_assoc($result);
 // print_r($row1);
-
+}
 $sql = "SELECT * FROM cars";
 
 $result = mysqli_query($connect, $sql);
@@ -63,7 +64,7 @@ ob_end_flush();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome <?= $row1['first_name'] ?></title>
+  <title>Welcome <?= (isset($row1)) ? $row1['first_name'] : "guest" ?></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -229,6 +230,7 @@ ob_end_flush();
               <i class="fa-solid fa-user"></i>My account
             </a>
             <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="register.php">Login</a></li>
               <li><a class="dropdown-item" href="edit-profile.php">Edit profile</a></li>
               <li><a class="dropdown-item" href="logout.php?logout">Logout</a></li>
             </ul>
